@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F2AD0C72BFCF97E00AB3457 /* RentalityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2AD0C62BFCF97E00AB3457 /* RentalityApp.swift */; };
+		8F2AD0C92BFCF97E00AB3457 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2AD0C82BFCF97E00AB3457 /* ContentView.swift */; };
+		8F2AD0CB2BFCF97F00AB3457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F2AD0CA2BFCF97F00AB3457 /* Assets.xcassets */; };
+		8F2AD0CE2BFCF97F00AB3457 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F2AD0CD2BFCF97F00AB3457 /* Preview Assets.xcassets */; };
+		8F2AD0D82BFCF97F00AB3457 /* RentalityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2AD0D72BFCF97F00AB3457 /* RentalityTests.swift */; };
+		8F2AD0E22BFCF97F00AB3457 /* RentalityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2AD0E12BFCF97F00AB3457 /* RentalityUITests.swift */; };
+		8F2AD0E42BFCF97F00AB3457 /* RentalityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2AD0E32BFCF97F00AB3457 /* RentalityUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F2AD0D42BFCF97F00AB3457 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2AD0BB2BFCF97E00AB3457 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F2AD0C22BFCF97E00AB3457;
+			remoteInfo = Rentality;
+		};
+		8F2AD0DE2BFCF97F00AB3457 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2AD0BB2BFCF97E00AB3457 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F2AD0C22BFCF97E00AB3457;
+			remoteInfo = Rentality;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8F2AD0C32BFCF97E00AB3457 /* Rentality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rentality.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F2AD0C62BFCF97E00AB3457 /* RentalityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalityApp.swift; sourceTree = "<group>"; };
+		8F2AD0C82BFCF97E00AB3457 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8F2AD0CA2BFCF97F00AB3457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F2AD0CD2BFCF97F00AB3457 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8F2AD0D32BFCF97F00AB3457 /* RentalityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RentalityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F2AD0D72BFCF97F00AB3457 /* RentalityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalityTests.swift; sourceTree = "<group>"; };
+		8F2AD0DD2BFCF97F00AB3457 /* RentalityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RentalityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F2AD0E12BFCF97F00AB3457 /* RentalityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalityUITests.swift; sourceTree = "<group>"; };
+		8F2AD0E32BFCF97F00AB3457 /* RentalityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalityUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F2AD0C02BFCF97E00AB3457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F2AD0D02BFCF97F00AB3457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F2AD0DA2BFCF97F00AB3457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F2AD0BA2BFCF97E00AB3457 = {
+			isa = PBXGroup;
+			children = (
+				8F2AD0C52BFCF97E00AB3457 /* Rentality */,
+				8F2AD0D62BFCF97F00AB3457 /* RentalityTests */,
+				8F2AD0E02BFCF97F00AB3457 /* RentalityUITests */,
+				8F2AD0C42BFCF97E00AB3457 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F2AD0C42BFCF97E00AB3457 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F2AD0C32BFCF97E00AB3457 /* Rentality.app */,
+				8F2AD0D32BFCF97F00AB3457 /* RentalityTests.xctest */,
+				8F2AD0DD2BFCF97F00AB3457 /* RentalityUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F2AD0C52BFCF97E00AB3457 /* Rentality */ = {
+			isa = PBXGroup;
+			children = (
+				8F2AD0C62BFCF97E00AB3457 /* RentalityApp.swift */,
+				8F2AD0C82BFCF97E00AB3457 /* ContentView.swift */,
+				8F2AD0CA2BFCF97F00AB3457 /* Assets.xcassets */,
+				8F2AD0CC2BFCF97F00AB3457 /* Preview Content */,
+			);
+			path = Rentality;
+			sourceTree = "<group>";
+		};
+		8F2AD0CC2BFCF97F00AB3457 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8F2AD0CD2BFCF97F00AB3457 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8F2AD0D62BFCF97F00AB3457 /* RentalityTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F2AD0D72BFCF97F00AB3457 /* RentalityTests.swift */,
+			);
+			path = RentalityTests;
+			sourceTree = "<group>";
+		};
+		8F2AD0E02BFCF97F00AB3457 /* RentalityUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8F2AD0E12BFCF97F00AB3457 /* RentalityUITests.swift */,
+				8F2AD0E32BFCF97F00AB3457 /* RentalityUITestsLaunchTests.swift */,
+			);
+			path = RentalityUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F2AD0C22BFCF97E00AB3457 /* Rentality */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F2AD0E72BFCF97F00AB3457 /* Build configuration list for PBXNativeTarget "Rentality" */;
+			buildPhases = (
+				8F2AD0BF2BFCF97E00AB3457 /* Sources */,
+				8F2AD0C02BFCF97E00AB3457 /* Frameworks */,
+				8F2AD0C12BFCF97E00AB3457 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rentality;
+			productName = Rentality;
+			productReference = 8F2AD0C32BFCF97E00AB3457 /* Rentality.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8F2AD0D22BFCF97F00AB3457 /* RentalityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F2AD0EA2BFCF97F00AB3457 /* Build configuration list for PBXNativeTarget "RentalityTests" */;
+			buildPhases = (
+				8F2AD0CF2BFCF97F00AB3457 /* Sources */,
+				8F2AD0D02BFCF97F00AB3457 /* Frameworks */,
+				8F2AD0D12BFCF97F00AB3457 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F2AD0D52BFCF97F00AB3457 /* PBXTargetDependency */,
+			);
+			name = RentalityTests;
+			productName = RentalityTests;
+			productReference = 8F2AD0D32BFCF97F00AB3457 /* RentalityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8F2AD0DC2BFCF97F00AB3457 /* RentalityUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F2AD0ED2BFCF97F00AB3457 /* Build configuration list for PBXNativeTarget "RentalityUITests" */;
+			buildPhases = (
+				8F2AD0D92BFCF97F00AB3457 /* Sources */,
+				8F2AD0DA2BFCF97F00AB3457 /* Frameworks */,
+				8F2AD0DB2BFCF97F00AB3457 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F2AD0DF2BFCF97F00AB3457 /* PBXTargetDependency */,
+			);
+			name = RentalityUITests;
+			productName = RentalityUITests;
+			productReference = 8F2AD0DD2BFCF97F00AB3457 /* RentalityUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F2AD0BB2BFCF97E00AB3457 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					8F2AD0C22BFCF97E00AB3457 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					8F2AD0D22BFCF97F00AB3457 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 8F2AD0C22BFCF97E00AB3457;
+					};
+					8F2AD0DC2BFCF97F00AB3457 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 8F2AD0C22BFCF97E00AB3457;
+					};
+				};
+			};
+			buildConfigurationList = 8F2AD0BE2BFCF97E00AB3457 /* Build configuration list for PBXProject "Rentality" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F2AD0BA2BFCF97E00AB3457;
+			productRefGroup = 8F2AD0C42BFCF97E00AB3457 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F2AD0C22BFCF97E00AB3457 /* Rentality */,
+				8F2AD0D22BFCF97F00AB3457 /* RentalityTests */,
+				8F2AD0DC2BFCF97F00AB3457 /* RentalityUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F2AD0C12BFCF97E00AB3457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F2AD0CE2BFCF97F00AB3457 /* Preview Assets.xcassets in Resources */,
+				8F2AD0CB2BFCF97F00AB3457 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F2AD0D12BFCF97F00AB3457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F2AD0DB2BFCF97F00AB3457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F2AD0BF2BFCF97E00AB3457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F2AD0C92BFCF97E00AB3457 /* ContentView.swift in Sources */,
+				8F2AD0C72BFCF97E00AB3457 /* RentalityApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F2AD0CF2BFCF97F00AB3457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F2AD0D82BFCF97F00AB3457 /* RentalityTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F2AD0D92BFCF97F00AB3457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F2AD0E22BFCF97F00AB3457 /* RentalityUITests.swift in Sources */,
+				8F2AD0E42BFCF97F00AB3457 /* RentalityUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F2AD0D52BFCF97F00AB3457 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F2AD0C22BFCF97E00AB3457 /* Rentality */;
+			targetProxy = 8F2AD0D42BFCF97F00AB3457 /* PBXContainerItemProxy */;
+		};
+		8F2AD0DF2BFCF97F00AB3457 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F2AD0C22BFCF97E00AB3457 /* Rentality */;
+			targetProxy = 8F2AD0DE2BFCF97F00AB3457 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8F2AD0E52BFCF97F00AB3457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8F2AD0E62BFCF97F00AB3457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F2AD0E82BFCF97F00AB3457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Rentality/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eigenmethod.Rentality;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F2AD0E92BFCF97F00AB3457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Rentality/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eigenmethod.Rentality;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8F2AD0EB2BFCF97F00AB3457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eigenmethod.RentalityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rentality.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rentality";
+			};
+			name = Debug;
+		};
+		8F2AD0EC2BFCF97F00AB3457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eigenmethod.RentalityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rentality.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rentality";
+			};
+			name = Release;
+		};
+		8F2AD0EE2BFCF97F00AB3457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eigenmethod.RentalityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rentality;
+			};
+			name = Debug;
+		};
+		8F2AD0EF2BFCF97F00AB3457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eigenmethod.RentalityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rentality;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F2AD0BE2BFCF97E00AB3457 /* Build configuration list for PBXProject "Rentality" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F2AD0E52BFCF97F00AB3457 /* Debug */,
+				8F2AD0E62BFCF97F00AB3457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F2AD0E72BFCF97F00AB3457 /* Build configuration list for PBXNativeTarget "Rentality" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F2AD0E82BFCF97F00AB3457 /* Debug */,
+				8F2AD0E92BFCF97F00AB3457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F2AD0EA2BFCF97F00AB3457 /* Build configuration list for PBXNativeTarget "RentalityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F2AD0EB2BFCF97F00AB3457 /* Debug */,
+				8F2AD0EC2BFCF97F00AB3457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F2AD0ED2BFCF97F00AB3457 /* Build configuration list for PBXNativeTarget "RentalityUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F2AD0EE2BFCF97F00AB3457 /* Debug */,
+				8F2AD0EF2BFCF97F00AB3457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F2AD0BB2BFCF97E00AB3457 /* Project object */;
+}
