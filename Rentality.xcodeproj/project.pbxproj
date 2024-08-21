@@ -14,6 +14,7 @@
 		8F2AD0D82BFCF97F00AB3457 /* RentalityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2AD0D72BFCF97F00AB3457 /* RentalityTests.swift */; };
 		8F2AD0E22BFCF97F00AB3457 /* RentalityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2AD0E12BFCF97F00AB3457 /* RentalityUITests.swift */; };
 		8F2AD0E42BFCF97F00AB3457 /* RentalityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2AD0E32BFCF97F00AB3457 /* RentalityUITestsLaunchTests.swift */; };
+		8F2AD0F12C06072A00AB3457 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2AD0F02C06072A00AB3457 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		8F2AD0DD2BFCF97F00AB3457 /* RentalityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RentalityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F2AD0E12BFCF97F00AB3457 /* RentalityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalityUITests.swift; sourceTree = "<group>"; };
 		8F2AD0E32BFCF97F00AB3457 /* RentalityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalityUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8F2AD0F02C06072A00AB3457 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		8F5E50A12C73EE6E00D166CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +97,12 @@
 		8F2AD0C52BFCF97E00AB3457 /* Rentality */ = {
 			isa = PBXGroup;
 			children = (
+				8F5E50A12C73EE6E00D166CD /* Info.plist */,
 				8F2AD0C62BFCF97E00AB3457 /* RentalityApp.swift */,
 				8F2AD0C82BFCF97E00AB3457 /* ContentView.swift */,
 				8F2AD0CA2BFCF97F00AB3457 /* Assets.xcassets */,
 				8F2AD0CC2BFCF97F00AB3457 /* Preview Content */,
+				8F2AD0F02C06072A00AB3457 /* WebView.swift */,
 			);
 			path = Rentality;
 			sourceTree = "<group>";
@@ -257,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F2AD0F12C06072A00AB3457 /* WebView.swift in Sources */,
 				8F2AD0C92BFCF97E00AB3457 /* ContentView.swift in Sources */,
 				8F2AD0C72BFCF97E00AB3457 /* RentalityApp.swift in Sources */,
 			);
@@ -422,8 +428,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Rentality/Preview Content\"";
+				DEVELOPMENT_TEAM = 5HV2XT29CJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Rentality/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -450,8 +458,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Rentality/Preview Content\"";
+				DEVELOPMENT_TEAM = 5HV2XT29CJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Rentality/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
