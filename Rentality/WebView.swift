@@ -24,6 +24,7 @@ struct WebView: UIViewRepresentable {
     // Встраиваем refreshControl в ScrollView WebView
         webView.scrollView.refreshControl = refreshControl
         webView.navigationDelegate = context.coordinator
+        webView.customUserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1"
         return webView
     }
     
@@ -60,7 +61,7 @@ struct WebView: UIViewRepresentable {
         
         func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
             if navigationAction.targetFrame == nil {
-                        webView.load(navigationAction.request)
+                webView.load(navigationAction.request)
             }
             decisionHandler(.allow)
         }
@@ -407,11 +408,14 @@ extension Ykbsdhjkbnsdf.Coordinator: WKNavigationDelegate, WKUIDelegate {
 
     func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
         webView.uiDelegate = self
-        if let frame = navigationAction.targetFrame,
-            frame.isMainFrame {
-            return nil
+//        if let frame = navigationAction.targetFrame,
+//            frame.isMainFrame {
+//            return nil
+//        }
+        if let url = navigationAction.request.url {
+            webView.load(URLRequest(url: url))
         }
-//        webView.load(navigationAction.request)
+
         return nil
 
 

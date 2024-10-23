@@ -10,9 +10,8 @@ import SwiftUI
 @main
 struct RentalityApp: App {
     var body: some Scene {
-//        Start()
         WindowGroup {
-//            WebView(link: "https://app.rentality.xyz")
+//            RentalityView()
             Start()
         }
     }
