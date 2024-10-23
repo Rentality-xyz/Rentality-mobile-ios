@@ -18,6 +18,11 @@ struct WebView: UIViewRepresentable {
     }
     
     func makeUIView(context: Context) -> WKWebView {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(context.coordinator, action: #selector(Coordinator.handleRefresh), for: .valueChanged)
+                
+    // Встраиваем refreshControl в ScrollView WebView
+        webView.scrollView.refreshControl = refreshControl
         webView.navigationDelegate = context.coordinator
         return webView
     }
@@ -38,6 +43,20 @@ struct WebView: UIViewRepresentable {
         init(_ parent: WebView) {
             self.parent = parent
         }
+        
+        @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
+                    if let webView = refreshControl.superview as? WKWebView {
+                        webView.reload() // Перезагружаем WebView
+                    }
+                    refreshControl.endRefreshing() // Завершаем обновление
+                }
+                
+                // Следим за завершением загрузки страницы, чтобы завершить обновление
+                func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+                    if let refreshControl = webView.scrollView.refreshControl, refreshControl.isRefreshing {
+                        refreshControl.endRefreshing() // Завершаем анимацию обновления после загрузки
+                    }
+                }
         
         func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
             if navigationAction.targetFrame == nil {
