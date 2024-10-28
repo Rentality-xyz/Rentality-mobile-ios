@@ -11,8 +11,8 @@ import SwiftUI
 struct RentalityApp: App {
     var body: some Scene {
         WindowGroup {
-//            RentalityView()
-            Start()
+            RentalityView()
+//            Start()
         }
     }
 }

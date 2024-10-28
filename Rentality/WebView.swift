@@ -7,94 +7,6 @@
 import SwiftUI
 import WebKit
 
-struct WebView: UIViewRepresentable {
-    
-    var link: String
-    
-    let webView: WKWebView = WKWebView()
-    
-    init(link: String) {
-        self.link = link
-    }
-    
-    func makeUIView(context: Context) -> WKWebView {
-        let refreshControl = UIRefreshControl()
-        refreshControl.addTarget(context.coordinator, action: #selector(Coordinator.handleRefresh), for: .valueChanged)
-                
-    // Встраиваем refreshControl в ScrollView WebView
-        webView.scrollView.refreshControl = refreshControl
-        webView.navigationDelegate = context.coordinator
-        webView.customUserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1"
-        return webView
-    }
-    
-    func updateUIView(_ uiView: WKWebView, context: Context) {
-        if let url = URL(string: link) {
-            uiView.load(URLRequest(url: url))
-        }
-    }
-    
-    func makeCoordinator() -> Coordinator {
-        Coordinator(self)
-    }
-    
-    class Coordinator: NSObject, WKNavigationDelegate {
-        var parent: WebView
-        
-        init(_ parent: WebView) {
-            self.parent = parent
-        }
-        
-        @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
-                    if let webView = refreshControl.superview as? WKWebView {
-                        webView.reload() // Перезагружаем WebView
-                    }
-                    refreshControl.endRefreshing() // Завершаем обновление
-                }
-                
-                // Следим за завершением загрузки страницы, чтобы завершить обновление
-                func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-                    if let refreshControl = webView.scrollView.refreshControl, refreshControl.isRefreshing {
-                        refreshControl.endRefreshing() // Завершаем анимацию обновления после загрузки
-                    }
-                }
-        
-        func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-            if navigationAction.targetFrame == nil {
-                webView.load(navigationAction.request)
-            }
-            decisionHandler(.allow)
-        }
-        
-
-    }
-}
-
-
-
-
-
-//struct WebView: UIViewRepresentable {
-//    
-//    var link: String
-// 
-//    let webView: WKWebView
-//    
-//    init(link: String) {
-//        webView = WKWebView(frame: .zero)
-//        self.link = link
-//    }
-//    
-//    
-//    func makeUIView(context: Context) -> WKWebView {
-//        return webView
-//    }
-//    func updateUIView(_ uiView: WKWebView, context: Context) {
-//        webView.load(URLRequest(url: URL(string: link)!))
-////    }
-//   
-//}
-
 
 struct Start: View {
     @State var howtoplay = false
@@ -267,6 +179,10 @@ struct Ykbsdhjkbnsdf : UIViewRepresentable {
     func viewDidLoad() {
 
         self.asvgujhdsbf?.backgroundColor = UIColor.black
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(Coordinator.reloadWebView(_:)), for: .valueChanged)
+        asvgujhdsbf?.scrollView.addSubview(refreshControl)
+        
         if #available(iOS 15.0, *) {
             themeObservation = asvgujhdsbf?.observe(\.themeColor) {  webView, _ in
                 self.asvgujhdsbf?.backgroundColor = webView.themeColor ?? .systemBackground
@@ -281,7 +197,11 @@ struct Ykbsdhjkbnsdf : UIViewRepresentable {
         let wkPreferences = WKPreferences()
         @ObservedObject var webViewStateModel: BbvsdujhgewGjvhsbdv
         wkPreferences.javaScriptCanOpenWindowsAutomatically = true
-
+        asvgujhdsbf?.navigationDelegate = context.coordinator
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(context.coordinator, action: #selector(Coordinator.reloadWebView(_:)), for: .valueChanged)
+        view.scrollView.addSubview(refreshControl)
+        
         let configuration = WKWebViewConfiguration()
         configuration.allowsInlineMediaPlayback = true
         configuration.preferences = wkPreferences
@@ -320,6 +240,12 @@ struct Ykbsdhjkbnsdf : UIViewRepresentable {
         @AppStorage("DestinationLink") var destLink: String = ""
         @ObservedObject var wewhjfttyuwyjghbsd: BbvsdujhgewGjvhsbdv
         let action: ((_ navigationAction: Gugusdighkjf.NavigationAction) -> Void)?
+        
+        @objc func reloadWebView(_ sender: UIRefreshControl) {
+            print("here h")
+            popupWebView?.reload()
+            sender.endRefreshing()
+        }
 
         init(action: ((_ navigationAction: Gugusdighkjf.NavigationAction) -> Void)?,
              webViewStateModel: BbvsdujhgewGjvhsbdv) {
@@ -331,42 +257,7 @@ struct Ykbsdhjkbnsdf : UIViewRepresentable {
 }
 
 extension Ykbsdhjkbnsdf.Coordinator: WKNavigationDelegate, WKUIDelegate {
-//    func webView(_ uyhdsfuygf: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-//
-//        uyhdsfuygf.evaluateJavaScript("window.open = function(open) { return function (url, name, features) { window.location.href = url; return window; }; } (window.open);", completionHandler: nil)
-//        uyhdsfuygf.evaluateJavaScript("window.close = function() { window.location.href = 'myapp://closewebview'; }", completionHandler: nil)
-//        
-//        if let url = navigationAction.request.url {
-//                    // Проверяем, является ли ссылка ссылкой на стороннее приложение
-//                    if url.scheme == "trust" || url.scheme == "tel" || url.scheme == "tg" || url.scheme == "twitter" {
-//                        // Открываем стороннее приложение
-//                        if UIApplication.shared.canOpenURL(url) {
-//                            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-//                            decisionHandler(.cancel)
-//                            return
-//                        }
-//                    }
-//                }
-//                
-//                // Если ссылка не ведет на стороннее приложение, продолжаем загрузку в WebView
-//                decisionHandler(.allow)
-//        
-////        if action == nil {
-////            decisionHandler(.allow)
-////        } else {
-////            action?(.decidePolicy(navigationAction, decisionHandler))
-////        }
-//    }
-    
-//    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-//
-//        if navigationAction.targetFrame == nil {
-//            webView.load(navigationAction.request)
-//        }
-//        decisionHandler(.allow)
-//    }
-    
-    
+
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
             let url = navigationAction.request.url?.absoluteString ?? ""
         

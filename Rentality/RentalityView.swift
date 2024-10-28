@@ -12,74 +12,127 @@ import SwiftUI
 import WebKit
 
 struct RentalityView: View {
+    
+    @State var isLoading = true
     var body: some View {
-        RentalityWebView(url: URL(string: "https://app.rentality.xyz")!)
-            .edgesIgnoringSafeArea(.bottom)
+        LoadingView(isShowing: .constant(isLoading)) {
+            RentalityWebView(url: URL(string: "https://app.rentality.xyz")!, isLoading: $isLoading)
+                .edgesIgnoringSafeArea(.bottom)
+        }
+    }
+}
+
+struct RentalityLoadingView<Content>: View where Content: View {
+
+    @Binding var isShowing: Bool
+    var content: () -> Content
+    var body: some View {
+        GeometryReader { geometry in
+            ZStack(alignment: .center) {
+
+                self.content()
+                    .disabled(self.isShowing)
+                    .blur(radius: self.isShowing ? 3 : 0)
+                ActivityIndicator(isAnimating: $isShowing, style: .large)
+
+                .frame(width: geometry.size.width / 2,
+                       height: geometry.size.height / 5)
+                .background(Color.secondary.colorInvert())
+                .foregroundColor(Color.primary)
+                .cornerRadius(20)
+                .opacity(self.isShowing ? 1 : 0)
+            }
+        }
     }
 }
 
 struct RentalityWebView: UIViewRepresentable {
+
     
     let url: URL
     
-    // Создаем WKWebView
-    func makeUIView(context: Context) -> WKWebView {
-           let webView = WKWebView()
-           webView.navigationDelegate = context.coordinator
-           
-           // Добавляем JavaScript для контроля прокрутки
-           let scriptSource = """
-           window.addEventListener('scroll', function() {
-               const header = document.querySelector('header');
-               if (window.scrollY > header.offsetHeight) {
-                   window.webkit.messageHandlers.refreshHandler.postMessage('refresh');
-               }
-           });
-           """
-           let script = WKUserScript(source: scriptSource, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
-           webView.configuration.userContentController.addUserScript(script)
-            webView.configuration.userContentController.add(context.coordinator as! WKScriptMessageHandler, name: "refreshHandler")
-
-           // Загружаем начальный URL
-           let request = URLRequest(url: url)
-           webView.load(request)
-           
-           return webView
-       }
+    let webView: WKWebView
     
-    // Обновляем WKWebView, загружая нужный URL
+    @Binding var isLoading: Bool
+        
+    init(url: URL, isLoading: Binding<Bool>) {
+        self.url = url
+        self.webView = WKWebView(frame: .zero)
+        self.webView.allowsBackForwardNavigationGestures = true
+        self._isLoading = isLoading
+    }
+        
+    func makeUIView(context: Context) -> WKWebView {
+        webView.navigationDelegate = context.coordinator
+        webView.uiDelegate = context.coordinator
+        
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(context.coordinator, action: #selector(Coordinator.reloadWebView(_:)), for: .valueChanged)
+        webView.scrollView.addSubview(refreshControl)
+        
+        return webView
+    }
+    
     func updateUIView(_ uiView: WKWebView, context: Context) {
-        let request = URLRequest(url: url)
-        uiView.load(request)
+        webView.load(URLRequest(url: url))
     }
     
     func makeCoordinator() -> Coordinator {
-        Coordinator(self)
+        Coordinator(self, isLoading: $isLoading)
     }
     
-    // Координатор для делегирования событий WebView и управления обновлением
-    class Coordinator: NSObject, WKNavigationDelegate {
+   
+    class Coordinator: NSObject, WKNavigationDelegate, WKUIDelegate {
+        
         var parent: RentalityWebView
+        @Binding var isLoading: Bool
             
-        init(_ parent: RentalityWebView) {
+        init(_ parent: RentalityWebView, isLoading: Binding<Bool>) {
             self.parent = parent
+            self._isLoading = isLoading
         }
+        
+        @objc func reloadWebView(_ sender: UIRefreshControl) {
+            parent.webView.reload()
+            sender.endRefreshing()
+        }
+        
+        func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+                let url = navigationAction.request.url?.absoluteString ?? ""
             
-        // Обработка сообщений от JavaScript
-               func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-                   if message.name == "refreshHandler", let _ = message.body as? String {
-                       // Выполняем перезагрузку WebView
-                       if let webView = message.webView {
-                           webView.reload()
-                       }
-                   }
-               }
-            
-        // Следим за завершением загрузки страницы, чтобы завершить обновление
-        func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-            if let refreshControl = webView.scrollView.refreshControl, refreshControl.isRefreshing {
-                            refreshControl.endRefreshing()
+                if navigationAction.targetFrame == nil {
+                    webView.load(navigationAction.request)
+                }
+                if url.starts(with: "http://") || url.starts(with: "https://") {
+                    decisionHandler(.allow)
+                } else {
+                    if let url = navigationAction.request.url {
+                        if url.scheme == "intent" {
+                            // Handle intent scheme if necessary
+                        } else {
+                            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                        }
+                    }
+                    decisionHandler(.cancel)
+                }
+        }
+        
+        func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
+            if let url = navigationAction.request.url {
+                webView.load(URLRequest(url: url))
             }
+
+            return nil
         }
+        
+        func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+            self.isLoading = false
+        }
+        
+        func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+            self.isLoading = false
+        }
+        
+            
     }
 }
