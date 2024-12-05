@@ -15,7 +15,7 @@ struct RentalityView: View {
     
     @State var isLoading = true
     var body: some View {
-        LoadingView(isShowing: .constant(isLoading)) {
+        RentalityLoadingView(isShowing: .constant(isLoading)) {
             RentalityWebView(url: URL(string: "https://app.rentality.xyz")!, isLoading: $isLoading)
                 .edgesIgnoringSafeArea(.bottom)
         }
@@ -43,6 +43,20 @@ struct RentalityLoadingView<Content>: View where Content: View {
                 .opacity(self.isShowing ? 1 : 0)
             }
         }
+    }
+}
+
+struct ActivityIndicator: UIViewRepresentable {
+
+    @Binding var isAnimating: Bool
+    let style: UIActivityIndicatorView.Style
+
+    func makeUIView(context: UIViewRepresentableContext<ActivityIndicator>) -> UIActivityIndicatorView {
+        return UIActivityIndicatorView(style: style)
+    }
+
+    func updateUIView(_ uiView: UIActivityIndicatorView, context: UIViewRepresentableContext<ActivityIndicator>) {
+        isAnimating ? uiView.startAnimating() : uiView.stopAnimating()
     }
 }
 
