@@ -15,10 +15,12 @@ struct RentalityView: View {
     
     @State var isLoading = true
     var body: some View {
-        RentalityLoadingView(isShowing: .constant(isLoading)) {
-            RentalityWebView(url: URL(string: "https://app.rentality.xyz")!, isLoading: $isLoading)
-                .edgesIgnoringSafeArea(.bottom)
-        }
+        RentalityWebView(url: URL(string: "https://app.rentality.io")!, isLoading: $isLoading)
+            .edgesIgnoringSafeArea(.bottom)
+//        RentalityLoadingView(isShowing: .constant(isLoading)) {
+//            RentalityWebView(url: URL(string: "https://app.rentality.io")!, isLoading: $isLoading)
+//                .edgesIgnoringSafeArea(.bottom)
+//        }
     }
 }
 
@@ -73,6 +75,7 @@ struct RentalityWebView: UIViewRepresentable {
         self.url = url
         self.webView = WKWebView(frame: .zero)
         self.webView.allowsBackForwardNavigationGestures = true
+        self.webView.customUserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1 RentalityApp"
         self._isLoading = isLoading
     }
         
