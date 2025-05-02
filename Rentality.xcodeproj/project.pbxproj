@@ -14,6 +14,8 @@
 		8F2AD0E22BFCF97F00AB3457 /* RentalityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2AD0E12BFCF97F00AB3457 /* RentalityUITests.swift */; };
 		8F2AD0E42BFCF97F00AB3457 /* RentalityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2AD0E32BFCF97F00AB3457 /* RentalityUITestsLaunchTests.swift */; };
 		8FC079B92CC91156008BBBA9 /* RentalityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC079B82CC91156008BBBA9 /* RentalityView.swift */; };
+		8FC603C42DC4BD840004FE59 /* gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC603C32DC4BD7F0004FE59 /* gif.swift */; };
+		8FC603C62DC4BDC80004FE59 /* platform_loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FC603C52DC4BDC80004FE59 /* platform_loader.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		8F2AD0E32BFCF97F00AB3457 /* RentalityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalityUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8F5E50A12C73EE6E00D166CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8FC079B82CC91156008BBBA9 /* RentalityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalityView.swift; sourceTree = "<group>"; };
+		8FC603C32DC4BD7F0004FE59 /* gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gif.swift; sourceTree = "<group>"; };
+		8FC603C52DC4BDC80004FE59 /* platform_loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = platform_loader.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 		8F2AD0C52BFCF97E00AB3457 /* Rentality */ = {
 			isa = PBXGroup;
 			children = (
+				8FC603C52DC4BDC80004FE59 /* platform_loader.gif */,
+				8FC603C32DC4BD7F0004FE59 /* gif.swift */,
 				8F5E50A12C73EE6E00D166CD /* Info.plist */,
 				8F2AD0C62BFCF97E00AB3457 /* RentalityApp.swift */,
 				8F2AD0CA2BFCF97F00AB3457 /* Assets.xcassets */,
@@ -234,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F2AD0CE2BFCF97F00AB3457 /* Preview Assets.xcassets in Resources */,
+				8FC603C62DC4BDC80004FE59 /* platform_loader.gif in Resources */,
 				8F2AD0CB2BFCF97F00AB3457 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FC079B92CC91156008BBBA9 /* RentalityView.swift in Sources */,
+				8FC603C42DC4BD840004FE59 /* gif.swift in Sources */,
 				8F2AD0C72BFCF97E00AB3457 /* RentalityApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,7 +430,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Rentality/Preview Content\"";
 				DEVELOPMENT_TEAM = MPGVK4S9T6;
 				ENABLE_PREVIEWS = YES;
@@ -438,7 +446,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.rentality.Rentality;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -456,7 +464,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Rentality/Preview Content\"";
 				DEVELOPMENT_TEAM = MPGVK4S9T6;
 				ENABLE_PREVIEWS = YES;
@@ -472,7 +480,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.rentality.Rentality;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

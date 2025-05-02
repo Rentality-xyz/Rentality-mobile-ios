@@ -1,0 +1,1023 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FD9948108DF4EFFA0B9C2CC91837A70 /* ImageSourceHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA2D200C1F1FB7260932C6C19B3073 /* ImageSourceHelpers.swift */; };
+		4E1EC97E08E2A3A8D292E989303C256E /* Pods-Rentality-RentalityUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40A9DF5568E42D19A861B7F46D7A3F3D /* Pods-Rentality-RentalityUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		505DCF7C5A7F8020835070B25CE16D6C /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9359BE71B75D55DE4BE533BDE33BDC5 /* CGSize.swift */; };
+		51BADEA1B37007F68DE06DEAE971378F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		5438ACC2FDD5D45EC2204E040FB1906E /* Pods-RentalityTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BE7417283F777B1E6BC4A7ACC76806 /* Pods-RentalityTests-dummy.m */; };
+		5860D546BA17C36F3BCC419B7C2C1080 /* FrameStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60625F095CCB756A24780DF428517F48 /* FrameStore.swift */; };
+		5DD10232A5B2D4C3F1A2403069F32A0F /* GIFAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C6797E2C648F9C2C0C1F88E0BFDD42 /* GIFAnimatable.swift */; };
+		6526A6B83711262C0765F80BED2B6532 /* Pods-Rentality-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FBA3DCA514F96B1E54CBBBB89C5A555 /* Pods-Rentality-dummy.m */; };
+		6D0278BE7B53460B3C65CDB22E1AB878 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		855E985525BE8DA8490D0DF6EE7C3A41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		8AE6697D36641538872DDC73A6696A4E /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAD25F15F67D6534CC7D5BEDF927B0E /* Animator.swift */; };
+		99C94AA17C3BF8870BA42D46F59C20C5 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25959C09DC3A371F58D229DA4AEEA4B6 /* UIImage.swift */; };
+		A963EB5EA35378887149EB58C1B9C652 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B75783DCBA70E828A15F0AB41FF3C1 /* UIImageView.swift */; };
+		B35F63882A0C55992846FED8F7534F40 /* GIFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A6C9EECE1FB159CB4FD2A4990DA26F /* GIFImageView.swift */; };
+		BAE7A4B90A8B9611E27B036A7FCC0645 /* Gifu.h in Headers */ = {isa = PBXBuildFile; fileRef = 8839D907CA601E641922E0597AE20AB6 /* Gifu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6C002D1E921B8817DB49DAD2F4E9F87 /* Gifu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C79F6818EF081FCEACA0CBD1F24AE4 /* Gifu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6326F82B40DAA8BA7C4ADD66A33FA50 /* AnimatedFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C142A2CCFB8206732377E0692407478E /* AnimatedFrame.swift */; };
+		E77AF98D10EC7EB257C98C6F4E35C2EE /* Pods-Rentality-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EF63DB73F81927A14C4CE7582A7DDBE /* Pods-Rentality-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E878C775E29EA3312EB6CC6C07B5844D /* Pods-RentalityTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AA8EC3896703449BF3D39F87C1D881 /* Pods-RentalityTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F12F5EE867793AAA4D207977D2304ADE /* Gifu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E1674F736E62F79BAA8C583D042EB1 /* Gifu-dummy.m */; };
+		F25938E0EB3BF7FD93ACB0CDD15B08E3 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F0784AA77FB7BC0EDAC7FDFD48074E /* Array.swift */; };
+		F7C50E710D70CFA81F16002CF5B193F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		FE9CBA0BC76252F17970046FD0359C99 /* Pods-Rentality-RentalityUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 072037C84B6F52B709ADC237FDCFBA33 /* Pods-Rentality-RentalityUITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B2834D7B26ADA0BC998AA8F5AB7934D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 830B5AB9E16163B4A1BA339D625FE46C;
+			remoteInfo = Gifu;
+		};
+		63517C57D10838136F441E2987884188 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 532EDD90C65B5F2B9D59DE17957561A3;
+			remoteInfo = "Pods-Rentality";
+		};
+		FF095B19D09A855DC0ED11211508B2A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 830B5AB9E16163B4A1BA339D625FE46C;
+			remoteInfo = Gifu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		072037C84B6F52B709ADC237FDCFBA33 /* Pods-Rentality-RentalityUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Rentality-RentalityUITests-dummy.m"; sourceTree = "<group>"; };
+		0AD744F1037955DAC16487ADD6DA6B82 /* Pods-Rentality-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rentality-Info.plist"; sourceTree = "<group>"; };
+		0EAA2D200C1F1FB7260932C6C19B3073 /* ImageSourceHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageSourceHelpers.swift; path = Sources/Gifu/Helpers/ImageSourceHelpers.swift; sourceTree = "<group>"; };
+		126C0507319F4402C81767793FFC2EAB /* Pods-Rentality-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Rentality-frameworks.sh"; sourceTree = "<group>"; };
+		143143E3D1D26E5BAB5DFF4D36498573 /* Pods-Rentality.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Rentality.modulemap"; sourceTree = "<group>"; };
+		1ACDAA594DF358236D87F022972BE69F /* Gifu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Gifu.release.xcconfig; sourceTree = "<group>"; };
+		25959C09DC3A371F58D229DA4AEEA4B6 /* UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImage.swift; path = Sources/Gifu/Extensions/UIImage.swift; sourceTree = "<group>"; };
+		30A6C9EECE1FB159CB4FD2A4990DA26F /* GIFImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GIFImageView.swift; path = Sources/Gifu/Classes/GIFImageView.swift; sourceTree = "<group>"; };
+		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		40A9DF5568E42D19A861B7F46D7A3F3D /* Pods-Rentality-RentalityUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Rentality-RentalityUITests-umbrella.h"; sourceTree = "<group>"; };
+		40E5F8D9277E714962AFA02550F15F8A /* Gifu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gifu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47B75783DCBA70E828A15F0AB41FF3C1 /* UIImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageView.swift; path = Sources/Gifu/Extensions/UIImageView.swift; sourceTree = "<group>"; };
+		48B48518044FC077F0F1441AFF0E331B /* Pods_RentalityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RentalityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FBA3DCA514F96B1E54CBBBB89C5A555 /* Pods-Rentality-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Rentality-dummy.m"; sourceTree = "<group>"; };
+		5EF63DB73F81927A14C4CE7582A7DDBE /* Pods-Rentality-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Rentality-umbrella.h"; sourceTree = "<group>"; };
+		60625F095CCB756A24780DF428517F48 /* FrameStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameStore.swift; path = Sources/Gifu/Classes/FrameStore.swift; sourceTree = "<group>"; };
+		60D2F13B7B2F9E15FD8A8D2B5E22A1B5 /* Pods-Rentality-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rentality-acknowledgements.plist"; sourceTree = "<group>"; };
+		686E26A9D8C2113DABDC7838CF4C4A52 /* Pods-Rentality.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rentality.release.xcconfig"; sourceTree = "<group>"; };
+		6EAD25F15F67D6534CC7D5BEDF927B0E /* Animator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animator.swift; path = Sources/Gifu/Classes/Animator.swift; sourceTree = "<group>"; };
+		6F092CE4C1BAE63E2D6BAA52A0EB9E6F /* Pods-Rentality-RentalityUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Rentality-RentalityUITests-frameworks.sh"; sourceTree = "<group>"; };
+		79C6797E2C648F9C2C0C1F88E0BFDD42 /* GIFAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GIFAnimatable.swift; path = Sources/Gifu/Classes/GIFAnimatable.swift; sourceTree = "<group>"; };
+		80AA8EC3896703449BF3D39F87C1D881 /* Pods-RentalityTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RentalityTests-umbrella.h"; sourceTree = "<group>"; };
+		8839D907CA601E641922E0597AE20AB6 /* Gifu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Gifu.h; path = Sources/Gifu.h; sourceTree = "<group>"; };
+		88B8D4566518F01B9C0783701CEE2A89 /* Pods-Rentality-RentalityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rentality-RentalityUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9045234C2E601380C2F7ED16642B6407 /* Gifu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gifu-prefix.pch"; sourceTree = "<group>"; };
+		9A4402833259FDEFBFA08546900ADA55 /* Pods-Rentality-RentalityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rentality-RentalityUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A25CB8988FF32420CA4EC54FCCFA2273 /* Pods-Rentality-RentalityUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rentality-RentalityUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A279621DAF67EF848686C02B8021D851 /* Pods_Rentality_RentalityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rentality_RentalityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A39FC7D9C3A23CBB885003E6AECE2EB3 /* Pods-RentalityTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RentalityTests-Info.plist"; sourceTree = "<group>"; };
+		A9359BE71B75D55DE4BE533BDE33BDC5 /* CGSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGSize.swift; path = Sources/Gifu/Extensions/CGSize.swift; sourceTree = "<group>"; };
+		AB6ADF3BDD5E627338523C697C8F2E13 /* Pods-RentalityTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RentalityTests.modulemap"; sourceTree = "<group>"; };
+		AD4F599CFAB64BA2A838210358167AA2 /* Pods-Rentality-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Rentality-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B2E1674F736E62F79BAA8C583D042EB1 /* Gifu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Gifu-dummy.m"; sourceTree = "<group>"; };
+		BA5179B78013732FDA2CFA18BDBE44B4 /* Gifu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Gifu.debug.xcconfig; sourceTree = "<group>"; };
+		C142A2CCFB8206732377E0692407478E /* AnimatedFrame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedFrame.swift; path = Sources/Gifu/Classes/AnimatedFrame.swift; sourceTree = "<group>"; };
+		C1F63BFA2E0BFD4D70D78A6D4A9596FC /* Pods-Rentality-RentalityUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rentality-RentalityUITests-Info.plist"; sourceTree = "<group>"; };
+		C3079D35119424622AC6C8EE944AAD88 /* Pods-RentalityTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RentalityTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CA37EBCCBE8E57A10433D027AEA04BDE /* Gifu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Gifu.modulemap; sourceTree = "<group>"; };
+		D5536B9775A504E00C36197310A85C1E /* Pods-Rentality.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rentality.debug.xcconfig"; sourceTree = "<group>"; };
+		DC3641403110C622D23E34F2D836DC7A /* Gifu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Gifu-Info.plist"; sourceTree = "<group>"; };
+		E1C79F6818EF081FCEACA0CBD1F24AE4 /* Gifu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gifu-umbrella.h"; sourceTree = "<group>"; };
+		E371E285D0A752DE0DEE1446903617DE /* Pods-RentalityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RentalityTests.release.xcconfig"; sourceTree = "<group>"; };
+		E4BE7417283F777B1E6BC4A7ACC76806 /* Pods-RentalityTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RentalityTests-dummy.m"; sourceTree = "<group>"; };
+		E8F0784AA77FB7BC0EDAC7FDFD48074E /* Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Array.swift; path = Sources/Gifu/Extensions/Array.swift; sourceTree = "<group>"; };
+		E94B12A0E7D3DBC7FDA760A944DC9036 /* Pods-RentalityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RentalityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F16A865B7D2D9352B87814DE7158B48B /* Pods-Rentality-RentalityUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Rentality-RentalityUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F57C065B4B9951B055C95FF76AF6074A /* Pods-Rentality-RentalityUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Rentality-RentalityUITests.modulemap"; sourceTree = "<group>"; };
+		F6D9761B96AF5F8B4A1AF0FFFED98B66 /* Pods_Rentality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rentality.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEDA1CD12A8F1CD930B683CB2FA0C62F /* Pods-RentalityTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RentalityTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0326A69B88D186DEA7C79639968F871D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51BADEA1B37007F68DE06DEAE971378F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C43C63015573ED1EA844CF72A41E457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7C50E710D70CFA81F16002CF5B193F3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26D3A8251CCD15303835C51DA003221F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				855E985525BE8DA8490D0DF6EE7C3A41 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DB7165958B9CDE02F95B125F3E28932 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D0278BE7B53460B3C65CDB22E1AB878 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		027196B3BA00D87C16FE6D15E30FA8C7 /* Gifu */ = {
+			isa = PBXGroup;
+			children = (
+				C142A2CCFB8206732377E0692407478E /* AnimatedFrame.swift */,
+				6EAD25F15F67D6534CC7D5BEDF927B0E /* Animator.swift */,
+				E8F0784AA77FB7BC0EDAC7FDFD48074E /* Array.swift */,
+				A9359BE71B75D55DE4BE533BDE33BDC5 /* CGSize.swift */,
+				60625F095CCB756A24780DF428517F48 /* FrameStore.swift */,
+				79C6797E2C648F9C2C0C1F88E0BFDD42 /* GIFAnimatable.swift */,
+				30A6C9EECE1FB159CB4FD2A4990DA26F /* GIFImageView.swift */,
+				8839D907CA601E641922E0597AE20AB6 /* Gifu.h */,
+				0EAA2D200C1F1FB7260932C6C19B3073 /* ImageSourceHelpers.swift */,
+				25959C09DC3A371F58D229DA4AEEA4B6 /* UIImage.swift */,
+				47B75783DCBA70E828A15F0AB41FF3C1 /* UIImageView.swift */,
+				9932F501BEC5D32776DB2F7D65CEA50E /* Support Files */,
+			);
+			path = Gifu;
+			sourceTree = "<group>";
+		};
+		5C95814B223D75621BA5538002FDBFCA /* Pods-Rentality-RentalityUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F57C065B4B9951B055C95FF76AF6074A /* Pods-Rentality-RentalityUITests.modulemap */,
+				F16A865B7D2D9352B87814DE7158B48B /* Pods-Rentality-RentalityUITests-acknowledgements.markdown */,
+				A25CB8988FF32420CA4EC54FCCFA2273 /* Pods-Rentality-RentalityUITests-acknowledgements.plist */,
+				072037C84B6F52B709ADC237FDCFBA33 /* Pods-Rentality-RentalityUITests-dummy.m */,
+				6F092CE4C1BAE63E2D6BAA52A0EB9E6F /* Pods-Rentality-RentalityUITests-frameworks.sh */,
+				C1F63BFA2E0BFD4D70D78A6D4A9596FC /* Pods-Rentality-RentalityUITests-Info.plist */,
+				40A9DF5568E42D19A861B7F46D7A3F3D /* Pods-Rentality-RentalityUITests-umbrella.h */,
+				88B8D4566518F01B9C0783701CEE2A89 /* Pods-Rentality-RentalityUITests.debug.xcconfig */,
+				9A4402833259FDEFBFA08546900ADA55 /* Pods-Rentality-RentalityUITests.release.xcconfig */,
+			);
+			name = "Pods-Rentality-RentalityUITests";
+			path = "Target Support Files/Pods-Rentality-RentalityUITests";
+			sourceTree = "<group>";
+		};
+		7A59972C2CB8BD227CC8FDB347AC35E9 /* Pods-Rentality */ = {
+			isa = PBXGroup;
+			children = (
+				143143E3D1D26E5BAB5DFF4D36498573 /* Pods-Rentality.modulemap */,
+				AD4F599CFAB64BA2A838210358167AA2 /* Pods-Rentality-acknowledgements.markdown */,
+				60D2F13B7B2F9E15FD8A8D2B5E22A1B5 /* Pods-Rentality-acknowledgements.plist */,
+				4FBA3DCA514F96B1E54CBBBB89C5A555 /* Pods-Rentality-dummy.m */,
+				126C0507319F4402C81767793FFC2EAB /* Pods-Rentality-frameworks.sh */,
+				0AD744F1037955DAC16487ADD6DA6B82 /* Pods-Rentality-Info.plist */,
+				5EF63DB73F81927A14C4CE7582A7DDBE /* Pods-Rentality-umbrella.h */,
+				D5536B9775A504E00C36197310A85C1E /* Pods-Rentality.debug.xcconfig */,
+				686E26A9D8C2113DABDC7838CF4C4A52 /* Pods-Rentality.release.xcconfig */,
+			);
+			name = "Pods-Rentality";
+			path = "Target Support Files/Pods-Rentality";
+			sourceTree = "<group>";
+		};
+		8B5E973490273AC6E92659C72B2ADB04 /* Pods-RentalityTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB6ADF3BDD5E627338523C697C8F2E13 /* Pods-RentalityTests.modulemap */,
+				FEDA1CD12A8F1CD930B683CB2FA0C62F /* Pods-RentalityTests-acknowledgements.markdown */,
+				C3079D35119424622AC6C8EE944AAD88 /* Pods-RentalityTests-acknowledgements.plist */,
+				E4BE7417283F777B1E6BC4A7ACC76806 /* Pods-RentalityTests-dummy.m */,
+				A39FC7D9C3A23CBB885003E6AECE2EB3 /* Pods-RentalityTests-Info.plist */,
+				80AA8EC3896703449BF3D39F87C1D881 /* Pods-RentalityTests-umbrella.h */,
+				E94B12A0E7D3DBC7FDA760A944DC9036 /* Pods-RentalityTests.debug.xcconfig */,
+				E371E285D0A752DE0DEE1446903617DE /* Pods-RentalityTests.release.xcconfig */,
+			);
+			name = "Pods-RentalityTests";
+			path = "Target Support Files/Pods-RentalityTests";
+			sourceTree = "<group>";
+		};
+		97F313725D789C3512301F429C3EFD46 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A59972C2CB8BD227CC8FDB347AC35E9 /* Pods-Rentality */,
+				5C95814B223D75621BA5538002FDBFCA /* Pods-Rentality-RentalityUITests */,
+				8B5E973490273AC6E92659C72B2ADB04 /* Pods-RentalityTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9932F501BEC5D32776DB2F7D65CEA50E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA37EBCCBE8E57A10433D027AEA04BDE /* Gifu.modulemap */,
+				B2E1674F736E62F79BAA8C583D042EB1 /* Gifu-dummy.m */,
+				DC3641403110C622D23E34F2D836DC7A /* Gifu-Info.plist */,
+				9045234C2E601380C2F7ED16642B6407 /* Gifu-prefix.pch */,
+				E1C79F6818EF081FCEACA0CBD1F24AE4 /* Gifu-umbrella.h */,
+				BA5179B78013732FDA2CFA18BDBE44B4 /* Gifu.debug.xcconfig */,
+				1ACDAA594DF358236D87F022972BE69F /* Gifu.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Gifu";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				D00AF72921005E8648604973D6159404 /* Pods */,
+				E9334484D15C49F3C6E2B69C2AF3F618 /* Products */,
+				97F313725D789C3512301F429C3EFD46 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D00AF72921005E8648604973D6159404 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				027196B3BA00D87C16FE6D15E30FA8C7 /* Gifu */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E9334484D15C49F3C6E2B69C2AF3F618 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40E5F8D9277E714962AFA02550F15F8A /* Gifu.framework */,
+				F6D9761B96AF5F8B4A1AF0FFFED98B66 /* Pods_Rentality.framework */,
+				A279621DAF67EF848686C02B8021D851 /* Pods_Rentality_RentalityUITests.framework */,
+				48B48518044FC077F0F1441AFF0E331B /* Pods_RentalityTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3DBABD6880DE6471BA37B0A6DF3F0AE4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E77AF98D10EC7EB257C98C6F4E35C2EE /* Pods-Rentality-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88533791DA9E9A9475B260A120189822 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E878C775E29EA3312EB6CC6C07B5844D /* Pods-RentalityTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B11F8233D4B889CE013CAF406FC74133 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE7A4B90A8B9611E27B036A7FCC0645 /* Gifu.h in Headers */,
+				C6C002D1E921B8817DB49DAD2F4E9F87 /* Gifu-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3716832A96B9947273102AEF7C0FC41 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E1EC97E08E2A3A8D292E989303C256E /* Pods-Rentality-RentalityUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2770EC55E8B30D2C68AE42EC8CC4924E /* Pods-Rentality-RentalityUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91ECE86AE1CB4E7D605B1F73AE834342 /* Build configuration list for PBXNativeTarget "Pods-Rentality-RentalityUITests" */;
+			buildPhases = (
+				C3716832A96B9947273102AEF7C0FC41 /* Headers */,
+				8446F6E1D464B45E29646CA6C5296968 /* Sources */,
+				0326A69B88D186DEA7C79639968F871D /* Frameworks */,
+				CB0385270CF40CFF1849D5780B10B211 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22FE46449D8818D9ED115B6521079E74 /* PBXTargetDependency */,
+			);
+			name = "Pods-Rentality-RentalityUITests";
+			productName = Pods_Rentality_RentalityUITests;
+			productReference = A279621DAF67EF848686C02B8021D851 /* Pods_Rentality_RentalityUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		532EDD90C65B5F2B9D59DE17957561A3 /* Pods-Rentality */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97F32A83BD7CB1E8957CC3F499CD5F8B /* Build configuration list for PBXNativeTarget "Pods-Rentality" */;
+			buildPhases = (
+				3DBABD6880DE6471BA37B0A6DF3F0AE4 /* Headers */,
+				705A9458F89675C8F09FE7988955ED65 /* Sources */,
+				0C43C63015573ED1EA844CF72A41E457 /* Frameworks */,
+				4CFB00650E1BE0D7BB3FA1B3ED6D6BE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D875D53CF65AD595748101F8AA1E3118 /* PBXTargetDependency */,
+			);
+			name = "Pods-Rentality";
+			productName = Pods_Rentality;
+			productReference = F6D9761B96AF5F8B4A1AF0FFFED98B66 /* Pods_Rentality.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6DB953EFB3825C1631434D023DB9B13C /* Pods-RentalityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD681038942BDEF7C0A4AF76396EFB67 /* Build configuration list for PBXNativeTarget "Pods-RentalityTests" */;
+			buildPhases = (
+				88533791DA9E9A9475B260A120189822 /* Headers */,
+				ADAB49B6D788F369D91F003B32BCDCF6 /* Sources */,
+				9DB7165958B9CDE02F95B125F3E28932 /* Frameworks */,
+				83B33A26A9399A44A17A5759428D596D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6EF73A440A198AC3383AC899FC3350C /* PBXTargetDependency */,
+			);
+			name = "Pods-RentalityTests";
+			productName = Pods_RentalityTests;
+			productReference = 48B48518044FC077F0F1441AFF0E331B /* Pods_RentalityTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		830B5AB9E16163B4A1BA339D625FE46C /* Gifu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E214456391B145A6E4AAB5E54D5ADC7 /* Build configuration list for PBXNativeTarget "Gifu" */;
+			buildPhases = (
+				B11F8233D4B889CE013CAF406FC74133 /* Headers */,
+				EE9A96E99B77C51F5C167B4BFD874638 /* Sources */,
+				26D3A8251CCD15303835C51DA003221F /* Frameworks */,
+				E54DD0C43EE641500A8FB07D29DEC6A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gifu;
+			productName = Gifu;
+			productReference = 40E5F8D9277E714962AFA02550F15F8A /* Gifu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E9334484D15C49F3C6E2B69C2AF3F618 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				830B5AB9E16163B4A1BA339D625FE46C /* Gifu */,
+				532EDD90C65B5F2B9D59DE17957561A3 /* Pods-Rentality */,
+				2770EC55E8B30D2C68AE42EC8CC4924E /* Pods-Rentality-RentalityUITests */,
+				6DB953EFB3825C1631434D023DB9B13C /* Pods-RentalityTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CFB00650E1BE0D7BB3FA1B3ED6D6BE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B33A26A9399A44A17A5759428D596D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB0385270CF40CFF1849D5780B10B211 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E54DD0C43EE641500A8FB07D29DEC6A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		705A9458F89675C8F09FE7988955ED65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6526A6B83711262C0765F80BED2B6532 /* Pods-Rentality-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8446F6E1D464B45E29646CA6C5296968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE9CBA0BC76252F17970046FD0359C99 /* Pods-Rentality-RentalityUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADAB49B6D788F369D91F003B32BCDCF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5438ACC2FDD5D45EC2204E040FB1906E /* Pods-RentalityTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE9A96E99B77C51F5C167B4BFD874638 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6326F82B40DAA8BA7C4ADD66A33FA50 /* AnimatedFrame.swift in Sources */,
+				8AE6697D36641538872DDC73A6696A4E /* Animator.swift in Sources */,
+				F25938E0EB3BF7FD93ACB0CDD15B08E3 /* Array.swift in Sources */,
+				505DCF7C5A7F8020835070B25CE16D6C /* CGSize.swift in Sources */,
+				5860D546BA17C36F3BCC419B7C2C1080 /* FrameStore.swift in Sources */,
+				5DD10232A5B2D4C3F1A2403069F32A0F /* GIFAnimatable.swift in Sources */,
+				B35F63882A0C55992846FED8F7534F40 /* GIFImageView.swift in Sources */,
+				F12F5EE867793AAA4D207977D2304ADE /* Gifu-dummy.m in Sources */,
+				1FD9948108DF4EFFA0B9C2CC91837A70 /* ImageSourceHelpers.swift in Sources */,
+				99C94AA17C3BF8870BA42D46F59C20C5 /* UIImage.swift in Sources */,
+				A963EB5EA35378887149EB58C1B9C652 /* UIImageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22FE46449D8818D9ED115B6521079E74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Gifu;
+			target = 830B5AB9E16163B4A1BA339D625FE46C /* Gifu */;
+			targetProxy = FF095B19D09A855DC0ED11211508B2A1 /* PBXContainerItemProxy */;
+		};
+		C6EF73A440A198AC3383AC899FC3350C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Rentality";
+			target = 532EDD90C65B5F2B9D59DE17957561A3 /* Pods-Rentality */;
+			targetProxy = 63517C57D10838136F441E2987884188 /* PBXContainerItemProxy */;
+		};
+		D875D53CF65AD595748101F8AA1E3118 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Gifu;
+			target = 830B5AB9E16163B4A1BA339D625FE46C /* Gifu */;
+			targetProxy = 4B2834D7B26ADA0BC998AA8F5AB7934D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D54EBB4165648A1546DF2EB24BF6540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 686E26A9D8C2113DABDC7838CF4C4A52 /* Pods-Rentality.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-Rentality/Pods-Rentality-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Rentality/Pods-Rentality.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3169FE8E6AEB4F0FC6EBD3E51E38D4A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E371E285D0A752DE0DEE1446903617DE /* Pods-RentalityTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-RentalityTests/Pods-RentalityTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RentalityTests/Pods-RentalityTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4632C9C3612420663AAC68EB7AEB3C3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E94B12A0E7D3DBC7FDA760A944DC9036 /* Pods-RentalityTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-RentalityTests/Pods-RentalityTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RentalityTests/Pods-RentalityTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		64876BE14F6F2CC9FDFB9BE64EBAB61A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ACDAA594DF358236D87F022972BE69F /* Gifu.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/Gifu/Gifu-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/Gifu/Gifu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Gifu/Gifu.modulemap";
+				PRODUCT_MODULE_NAME = Gifu;
+				PRODUCT_NAME = Gifu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.4;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		653FA1D6D4C82BA9A69BDB92B10D8AFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88B8D4566518F01B9C0783701CEE2A89 /* Pods-Rentality-RentalityUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-Rentality-RentalityUITests/Pods-Rentality-RentalityUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Rentality-RentalityUITests/Pods-Rentality-RentalityUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7B5EFF43A99182B372116BE309C88F61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A4402833259FDEFBFA08546900ADA55 /* Pods-Rentality-RentalityUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-Rentality-RentalityUITests/Pods-Rentality-RentalityUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Rentality-RentalityUITests/Pods-Rentality-RentalityUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A53ACD17923F5ADE4071D52C5CFE2CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5536B9775A504E00C36197310A85C1E /* Pods-Rentality.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-Rentality/Pods-Rentality-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Rentality/Pods-Rentality.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F0CC660E59730FA7B9C9C57706C10266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA5179B78013732FDA2CFA18BDBE44B4 /* Gifu.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/Gifu/Gifu-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/Gifu/Gifu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Gifu/Gifu.modulemap";
+				PRODUCT_MODULE_NAME = Gifu;
+				PRODUCT_NAME = Gifu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.4;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E214456391B145A6E4AAB5E54D5ADC7 /* Build configuration list for PBXNativeTarget "Gifu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0CC660E59730FA7B9C9C57706C10266 /* Debug */,
+				64876BE14F6F2CC9FDFB9BE64EBAB61A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91ECE86AE1CB4E7D605B1F73AE834342 /* Build configuration list for PBXNativeTarget "Pods-Rentality-RentalityUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				653FA1D6D4C82BA9A69BDB92B10D8AFF /* Debug */,
+				7B5EFF43A99182B372116BE309C88F61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97F32A83BD7CB1E8957CC3F499CD5F8B /* Build configuration list for PBXNativeTarget "Pods-Rentality" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A53ACD17923F5ADE4071D52C5CFE2CD1 /* Debug */,
+				1D54EBB4165648A1546DF2EB24BF6540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD681038942BDEF7C0A4AF76396EFB67 /* Build configuration list for PBXNativeTarget "Pods-RentalityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4632C9C3612420663AAC68EB7AEB3C3B /* Debug */,
+				3169FE8E6AEB4F0FC6EBD3E51E38D4A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
