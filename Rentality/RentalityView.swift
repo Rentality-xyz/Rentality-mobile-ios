@@ -163,6 +163,7 @@ struct GIFImage: UIViewRepresentable {
 }
 
 struct RentalityWebView: UIViewRepresentable {
+    
     let url: URL
     let webView: WKWebView
     @Binding var isLoading: Bool
@@ -176,23 +177,20 @@ struct RentalityWebView: UIViewRepresentable {
         self._isLoading = isLoading
         self._reloadTrigger = reloadTrigger
     }
-
+    
     func makeUIView(context: Context) -> WKWebView {
-        webView.navigationDelegate = context.coordinator
-        webView.uiDelegate = context.coordinator
-        loadWebPage()
-        return webView
-    }
+            webView.navigationDelegate = context.coordinator
+            webView.uiDelegate = context.coordinator
+            
+            let refreshControl = UIRefreshControl()
+            refreshControl.addTarget(context.coordinator, action: #selector(Coordinator.reloadWebView(_:)), for: .valueChanged)
+            webView.scrollView.addSubview(refreshControl)
+            
+            return webView
+        }
 
     func updateUIView(_ uiView: WKWebView, context: Context) {
-        if reloadTrigger {
-            loadWebPage()
-        }
-    }
-
-    private func loadWebPage() {
-        let request = URLRequest(url: url)
-        webView.load(request)
+        webView.load(URLRequest(url: url))
     }
 
     func makeCoordinator() -> Coordinator {
@@ -200,25 +198,57 @@ struct RentalityWebView: UIViewRepresentable {
     }
 
     class Coordinator: NSObject, WKNavigationDelegate, WKUIDelegate {
-        var parent: RentalityWebView
-        @Binding var isLoading: Bool
-        
-        init(_ parent: RentalityWebView, isLoading: Binding<Bool>) {
-            self.parent = parent
-            self._isLoading = isLoading
-        }
+            
+            var parent: RentalityWebView
+            @Binding var isLoading: Bool
+                
+            init(_ parent: RentalityWebView, isLoading: Binding<Bool>) {
+                self.parent = parent
+                self._isLoading = isLoading
+            }
+            
+            @objc func reloadWebView(_ sender: UIRefreshControl) {
+                parent.webView.reload()
+                sender.endRefreshing()
+            }
+            
+            func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+                    let url = navigationAction.request.url?.absoluteString ?? ""
+                
+                    if navigationAction.targetFrame == nil {
+                        webView.load(navigationAction.request)
+                    }
+                    if url.starts(with: "http://") || url.starts(with: "https://") {
+                        decisionHandler(.allow)
+                    } else {
+                        if let url = navigationAction.request.url {
+                            if url.scheme == "intent" {
+                                // Handle intent scheme if necessary
+                            } else {
+                                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                            }
+                        }
+                        decisionHandler(.cancel)
+                    }
+            }
+            
+            func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
+                if let url = navigationAction.request.url {
+                    webView.load(URLRequest(url: url))
+                }
 
-        func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-            isLoading = false
-        }
-
-        func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-            isLoading = false
-        }
-
-        func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
-            isLoading = false
-        }
+                return nil
+            }
+            
+            func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+                self.isLoading = false
+            }
+            
+            func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+                self.isLoading = false
+            }
+            
+                
     }
 }
 
