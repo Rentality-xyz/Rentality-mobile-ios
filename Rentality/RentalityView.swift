@@ -29,7 +29,7 @@ struct RentalityView: View {
             }
         } else {
             VStack(spacing: 16) {
-                        Text("There seems to be a problem with your internet connection") // Локализуйте через Localizable.strings при необходимости
+                        Text("There seems to be a problem with your internet connection") 
                             .foregroundColor(.white)
                             .font(.system(size: 24, weight: .bold))
                             .multilineTextAlignment(.center)
@@ -78,7 +78,7 @@ struct GradientButton: View {
                     endPoint: .bottomTrailing
                 )
             )
-            .cornerRadius(30) // Полностью закруглённая кнопка
+            .cornerRadius(30)
         }
         .padding(.horizontal)
     }
@@ -146,7 +146,7 @@ struct GIFImage: UIViewRepresentable {
 
                 container.addSubview(imageView)
 
-                // Привязка imageView к границам container (UIView)
+                
                 NSLayoutConstraint.activate([
                     imageView.leadingAnchor.constraint(equalTo: container.leadingAnchor),
                     imageView.trailingAnchor.constraint(equalTo: container.trailingAnchor),
@@ -158,7 +158,7 @@ struct GIFImage: UIViewRepresentable {
     }
 
     func updateUIView(_ uiView: UIView, context: Context) {
-        // Ничего не обновляем
+        
     }
 }
 
