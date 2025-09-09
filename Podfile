@@ -6,6 +6,8 @@ target 'Rentality' do
   use_frameworks!
   
   pod 'Gifu'
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
 
   # Pods for Rentality
 

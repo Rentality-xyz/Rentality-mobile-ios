@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01C51334F7DFB9702411DCF9 /* Pods_Rentality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47DCF55D2EE79CD9B70E4B27 /* Pods_Rentality.framework */; };
+		7E9701CD94061A8C2218A79D /* Pods_Rentality_RentalityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E867291C05CF21E29764F848 /* Pods_Rentality_RentalityUITests.framework */; };
 		8F2AD0C72BFCF97E00AB3457 /* RentalityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2AD0C62BFCF97E00AB3457 /* RentalityApp.swift */; };
 		8F2AD0CB2BFCF97F00AB3457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F2AD0CA2BFCF97F00AB3457 /* Assets.xcassets */; };
 		8F2AD0CE2BFCF97F00AB3457 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F2AD0CD2BFCF97F00AB3457 /* Preview Assets.xcassets */; };
 		8F2AD0D82BFCF97F00AB3457 /* RentalityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2AD0D72BFCF97F00AB3457 /* RentalityTests.swift */; };
 		8F2AD0E22BFCF97F00AB3457 /* RentalityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2AD0E12BFCF97F00AB3457 /* RentalityUITests.swift */; };
 		8F2AD0E42BFCF97F00AB3457 /* RentalityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2AD0E32BFCF97F00AB3457 /* RentalityUITestsLaunchTests.swift */; };
+		8F9CB2CE2E6EFDF60010CF4D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F9CB2CD2E6EFDF60010CF4D /* GoogleService-Info.plist */; };
 		8FC079B92CC91156008BBBA9 /* RentalityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC079B82CC91156008BBBA9 /* RentalityView.swift */; };
 		8FC603C42DC4BD840004FE59 /* gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC603C32DC4BD7F0004FE59 /* gif.swift */; };
 		8FC603C62DC4BDC80004FE59 /* platform_loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FC603C52DC4BDC80004FE59 /* platform_loader.gif */; };
+		EEC2919016AD93370B7154EF /* Pods_RentalityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBAA772F26119AE50A300D2D /* Pods_RentalityTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FDFBDAFB115CC03DA8CD2DB /* Pods-Rentality.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rentality.debug.xcconfig"; path = "Target Support Files/Pods-Rentality/Pods-Rentality.debug.xcconfig"; sourceTree = "<group>"; };
+		47DCF55D2EE79CD9B70E4B27 /* Pods_Rentality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rentality.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		501F9A9828DEEB2CCA6AD8FE /* Pods-Rentality-RentalityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rentality-RentalityUITests.release.xcconfig"; path = "Target Support Files/Pods-Rentality-RentalityUITests/Pods-Rentality-RentalityUITests.release.xcconfig"; sourceTree = "<group>"; };
+		66ADEF7CBD1208CBE1EB95FE /* Pods-Rentality-RentalityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rentality-RentalityUITests.debug.xcconfig"; path = "Target Support Files/Pods-Rentality-RentalityUITests/Pods-Rentality-RentalityUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6840850F885BA0E32061B60B /* Pods-RentalityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentalityTests.release.xcconfig"; path = "Target Support Files/Pods-RentalityTests/Pods-RentalityTests.release.xcconfig"; sourceTree = "<group>"; };
+		819812DDD7FFE1A9332BCD27 /* Pods-Rentality.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rentality.release.xcconfig"; path = "Target Support Files/Pods-Rentality/Pods-Rentality.release.xcconfig"; sourceTree = "<group>"; };
 		8F2AD0C32BFCF97E00AB3457 /* Rentality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rentality.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F2AD0C62BFCF97E00AB3457 /* RentalityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalityApp.swift; sourceTree = "<group>"; };
 		8F2AD0CA2BFCF97F00AB3457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,9 +56,14 @@
 		8F2AD0E12BFCF97F00AB3457 /* RentalityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalityUITests.swift; sourceTree = "<group>"; };
 		8F2AD0E32BFCF97F00AB3457 /* RentalityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalityUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8F5E50A12C73EE6E00D166CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8F9CB2C82E6EF7620010CF4D /* Rentality.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Rentality.entitlements; sourceTree = "<group>"; };
+		8F9CB2CD2E6EFDF60010CF4D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8FC079B82CC91156008BBBA9 /* RentalityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalityView.swift; sourceTree = "<group>"; };
 		8FC603C32DC4BD7F0004FE59 /* gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gif.swift; sourceTree = "<group>"; };
 		8FC603C52DC4BDC80004FE59 /* platform_loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = platform_loader.gif; sourceTree = "<group>"; };
+		E867291C05CF21E29764F848 /* Pods_Rentality_RentalityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rentality_RentalityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F827BF1F9E30DD9085BB9654 /* Pods-RentalityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentalityTests.debug.xcconfig"; path = "Target Support Files/Pods-RentalityTests/Pods-RentalityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FBAA772F26119AE50A300D2D /* Pods_RentalityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RentalityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01C51334F7DFB9702411DCF9 /* Pods_Rentality.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEC2919016AD93370B7154EF /* Pods_RentalityTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E9701CD94061A8C2218A79D /* Pods_Rentality_RentalityUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +101,8 @@
 				8F2AD0D62BFCF97F00AB3457 /* RentalityTests */,
 				8F2AD0E02BFCF97F00AB3457 /* RentalityUITests */,
 				8F2AD0C42BFCF97E00AB3457 /* Products */,
+				F2D8B47F06CB17880E090C98 /* Pods */,
+				CF21C45E14C22C7E5E6E30D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +119,7 @@
 		8F2AD0C52BFCF97E00AB3457 /* Rentality */ = {
 			isa = PBXGroup;
 			children = (
+				8F9CB2C82E6EF7620010CF4D /* Rentality.entitlements */,
 				8FC603C52DC4BDC80004FE59 /* platform_loader.gif */,
 				8FC603C32DC4BD7F0004FE59 /* gif.swift */,
 				8F5E50A12C73EE6E00D166CD /* Info.plist */,
@@ -106,6 +127,7 @@
 				8F2AD0CA2BFCF97F00AB3457 /* Assets.xcassets */,
 				8F2AD0CC2BFCF97F00AB3457 /* Preview Content */,
 				8FC079B82CC91156008BBBA9 /* RentalityView.swift */,
+				8F9CB2CD2E6EFDF60010CF4D /* GoogleService-Info.plist */,
 			);
 			path = Rentality;
 			sourceTree = "<group>";
@@ -135,6 +157,29 @@
 			path = RentalityUITests;
 			sourceTree = "<group>";
 		};
+		CF21C45E14C22C7E5E6E30D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47DCF55D2EE79CD9B70E4B27 /* Pods_Rentality.framework */,
+				E867291C05CF21E29764F848 /* Pods_Rentality_RentalityUITests.framework */,
+				FBAA772F26119AE50A300D2D /* Pods_RentalityTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2D8B47F06CB17880E090C98 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FDFBDAFB115CC03DA8CD2DB /* Pods-Rentality.debug.xcconfig */,
+				819812DDD7FFE1A9332BCD27 /* Pods-Rentality.release.xcconfig */,
+				66ADEF7CBD1208CBE1EB95FE /* Pods-Rentality-RentalityUITests.debug.xcconfig */,
+				501F9A9828DEEB2CCA6AD8FE /* Pods-Rentality-RentalityUITests.release.xcconfig */,
+				F827BF1F9E30DD9085BB9654 /* Pods-RentalityTests.debug.xcconfig */,
+				6840850F885BA0E32061B60B /* Pods-RentalityTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F2AD0E72BFCF97F00AB3457 /* Build configuration list for PBXNativeTarget "Rentality" */;
 			buildPhases = (
+				CC11DFA9D80A705C1BA42470 /* [CP] Check Pods Manifest.lock */,
 				8F2AD0BF2BFCF97E00AB3457 /* Sources */,
 				8F2AD0C02BFCF97E00AB3457 /* Frameworks */,
 				8F2AD0C12BFCF97E00AB3457 /* Resources */,
+				612E28E3566CEEA04D713786 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,6 +206,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F2AD0EA2BFCF97F00AB3457 /* Build configuration list for PBXNativeTarget "RentalityTests" */;
 			buildPhases = (
+				1E33C416B242C8D7E3D234C9 /* [CP] Check Pods Manifest.lock */,
 				8F2AD0CF2BFCF97F00AB3457 /* Sources */,
 				8F2AD0D02BFCF97F00AB3457 /* Frameworks */,
 				8F2AD0D12BFCF97F00AB3457 /* Resources */,
@@ -177,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F2AD0ED2BFCF97F00AB3457 /* Build configuration list for PBXNativeTarget "RentalityUITests" */;
 			buildPhases = (
+				FC1769820A2D78A8D5CCAE29 /* [CP] Check Pods Manifest.lock */,
 				8F2AD0D92BFCF97F00AB3457 /* Sources */,
 				8F2AD0DA2BFCF97F00AB3457 /* Frameworks */,
 				8F2AD0DB2BFCF97F00AB3457 /* Resources */,
+				D9BEAC98E256E0B49528A04F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -240,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F2AD0CE2BFCF97F00AB3457 /* Preview Assets.xcassets in Resources */,
+				8F9CB2CE2E6EFDF60010CF4D /* GoogleService-Info.plist in Resources */,
 				8FC603C62DC4BDC80004FE59 /* platform_loader.gif in Resources */,
 				8F2AD0CB2BFCF97F00AB3457 /* Assets.xcassets in Resources */,
 			);
@@ -260,6 +311,117 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E33C416B242C8D7E3D234C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RentalityTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		612E28E3566CEEA04D713786 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rentality/Pods-Rentality-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rentality/Pods-Rentality-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH\"\necho \"Using rsync at: $(command -v rsync)\"\n\n\"${PODS_ROOT}/Target Support Files/Pods-Rentality/Pods-Rentality-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC11DFA9D80A705C1BA42470 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rentality-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9BEAC98E256E0B49528A04F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rentality-RentalityUITests/Pods-Rentality-RentalityUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rentality-RentalityUITests/Pods-Rentality-RentalityUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rentality-RentalityUITests/Pods-Rentality-RentalityUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC1769820A2D78A8D5CCAE29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rentality-RentalityUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8F2AD0BF2BFCF97E00AB3457 /* Sources */ = {
@@ -342,7 +504,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -405,7 +567,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -426,9 +588,11 @@
 		};
 		8F2AD0E82BFCF97F00AB3457 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FDFBDAFB115CC03DA8CD2DB /* Pods-Rentality.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Rentality/Rentality.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Rentality/Preview Content\"";
@@ -436,6 +600,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Rentality/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) requires access to the camera to allow users to take photos of documents for identity verification (KYC) purposes. Additionally, the camera can optionally be used to capture profile photos to personalize the user experience.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) requires access to the photo library to allow users to get photos of documents for identity verification (KYC) purposes. Additionally, the photos can optionally be used to capture profile photos to personalize the user experience.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -460,9 +626,11 @@
 		};
 		8F2AD0E92BFCF97F00AB3457 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 819812DDD7FFE1A9332BCD27 /* Pods-Rentality.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Rentality/Rentality.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Rentality/Preview Content\"";
@@ -470,6 +638,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Rentality/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) requires access to the camera to allow users to take photos of documents for identity verification (KYC) purposes. Additionally, the camera can optionally be used to capture profile photos to personalize the user experience.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) requires access to the photo library to allow users to get photos of documents for identity verification (KYC) purposes. Additionally, the photos can optionally be used to capture profile photos to personalize the user experience.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -494,6 +664,7 @@
 		};
 		8F2AD0EB2BFCF97F00AB3457 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F827BF1F9E30DD9085BB9654 /* Pods-RentalityTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +684,7 @@
 		};
 		8F2AD0EC2BFCF97F00AB3457 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6840850F885BA0E32061B60B /* Pods-RentalityTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +704,7 @@
 		};
 		8F2AD0EE2BFCF97F00AB3457 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66ADEF7CBD1208CBE1EB95FE /* Pods-Rentality-RentalityUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -549,6 +722,7 @@
 		};
 		8F2AD0EF2BFCF97F00AB3457 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 501F9A9828DEEB2CCA6AD8FE /* Pods-Rentality-RentalityUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

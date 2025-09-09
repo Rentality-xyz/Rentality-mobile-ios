@@ -21,7 +21,7 @@ struct RentalityView: View {
         if networkMonitor.isConnected {
             RentalityLoadingView(isShowing: .constant(isLoading)) {
                 RentalityWebView(
-                    url: URL(string: "https://app.rentality.io")!,
+                    url: URL(string: "http://192.168.0.100:3000/platform_init_error")!,
                     isLoading: $isLoading,
                     reloadTrigger: $reloadTrigger
                 )
@@ -242,6 +242,12 @@ struct RentalityWebView: UIViewRepresentable {
             
             func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
                 self.isLoading = false
+                let token = UserDefaults.standard.string(forKey: "fcmToken") ?? ""
+                    let esc = token
+                        .replacingOccurrences(of: "\\", with: "\\\\")
+                        .replacingOccurrences(of: "'", with: "\\'")
+                    let js = "window.__pushToken='\(esc)'; try{localStorage.setItem('pushToken','\(esc)')}catch(e){};"
+                    webView.evaluateJavaScript(js, completionHandler: nil)
             }
             
             func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
