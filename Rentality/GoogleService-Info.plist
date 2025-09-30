@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyCJwV1DExAgThpyYgZZRrBLc20VxsdOrxg</string>
+	<string>AIzaSyBGh6k5fZaP5Q6RbjrwlBWUdB9owqCVNOs</string>
 	<key>GCM_SENDER_ID</key>
-	<string>206603688518</string>
+	<string>408291621097</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>xyz.rentality.Rentality</string>
 	<key>PROJECT_ID</key>
-	<string>rentality-demo</string>
+	<string>rentality-app-428806</string>
 	<key>STORAGE_BUCKET</key>
-	<string>rentality-demo.appspot.com</string>
+	<string>rentality-app-428806.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:206603688518:ios:6e6891f4de7462a3ffc847</string>
+	<string>1:408291621097:ios:c788dec03f61d1b413d878</string>
 </dict>
 </plist>

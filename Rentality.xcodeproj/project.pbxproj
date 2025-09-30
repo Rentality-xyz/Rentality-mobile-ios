@@ -15,7 +15,7 @@
 		8F2AD0D82BFCF97F00AB3457 /* RentalityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2AD0D72BFCF97F00AB3457 /* RentalityTests.swift */; };
 		8F2AD0E22BFCF97F00AB3457 /* RentalityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2AD0E12BFCF97F00AB3457 /* RentalityUITests.swift */; };
 		8F2AD0E42BFCF97F00AB3457 /* RentalityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2AD0E32BFCF97F00AB3457 /* RentalityUITestsLaunchTests.swift */; };
-		8F9CB2D22E70D5810010CF4D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F9CB2D12E70D5810010CF4D /* GoogleService-Info.plist */; };
+		8F6FA8B72E8BFE4F004BC64A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F6FA8B62E8BFE4F004BC64A /* GoogleService-Info.plist */; };
 		8FC079B92CC91156008BBBA9 /* RentalityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC079B82CC91156008BBBA9 /* RentalityView.swift */; };
 		8FC603C42DC4BD840004FE59 /* gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC603C32DC4BD7F0004FE59 /* gif.swift */; };
 		8FC603C62DC4BDC80004FE59 /* platform_loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FC603C52DC4BDC80004FE59 /* platform_loader.gif */; };
@@ -56,8 +56,8 @@
 		8F2AD0E12BFCF97F00AB3457 /* RentalityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalityUITests.swift; sourceTree = "<group>"; };
 		8F2AD0E32BFCF97F00AB3457 /* RentalityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalityUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8F5E50A12C73EE6E00D166CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8F6FA8B62E8BFE4F004BC64A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8F9CB2C82E6EF7620010CF4D /* Rentality.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Rentality.entitlements; sourceTree = "<group>"; };
-		8F9CB2D12E70D5810010CF4D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8FC079B82CC91156008BBBA9 /* RentalityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalityView.swift; sourceTree = "<group>"; };
 		8FC603C32DC4BD7F0004FE59 /* gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gif.swift; sourceTree = "<group>"; };
 		8FC603C52DC4BDC80004FE59 /* platform_loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = platform_loader.gif; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 				8F2AD0CA2BFCF97F00AB3457 /* Assets.xcassets */,
 				8F2AD0CC2BFCF97F00AB3457 /* Preview Content */,
 				8FC079B82CC91156008BBBA9 /* RentalityView.swift */,
-				8F9CB2D12E70D5810010CF4D /* GoogleService-Info.plist */,
+				8F6FA8B62E8BFE4F004BC64A /* GoogleService-Info.plist */,
 			);
 			path = Rentality;
 			sourceTree = "<group>";
@@ -290,7 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F2AD0CE2BFCF97F00AB3457 /* Preview Assets.xcassets in Resources */,
-				8F9CB2D22E70D5810010CF4D /* GoogleService-Info.plist in Resources */,
+				8F6FA8B72E8BFE4F004BC64A /* GoogleService-Info.plist in Resources */,
 				8FC603C62DC4BDC80004FE59 /* platform_loader.gif in Resources */,
 				8F2AD0CB2BFCF97F00AB3457 /* Assets.xcassets in Resources */,
 			);
