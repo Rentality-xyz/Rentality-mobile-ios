@@ -21,7 +21,7 @@ struct RentalityView: View {
         if networkMonitor.isConnected {
             RentalityLoadingView(isShowing: .constant(isLoading)) {
                 RentalityWebView(
-                    url: URL(string: "https://rentality.io")!,
+                    url: URL(string: "https://app.rentality.io")!,
                     isLoading: $isLoading,
                     reloadTrigger: $reloadTrigger
                 )
