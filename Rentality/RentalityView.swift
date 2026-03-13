@@ -21,8 +21,9 @@ struct RentalityView: View {
         if networkMonitor.isConnected {
             RentalityLoadingView(isShowing: .constant(isLoading)) {
                 RentalityWebView(
-                    url: URL(string: "https://rentality.io")!,
-                    isLoading: $isLoading,
+                    url: URL(string: "https://app.rentality.io")!,                    isLoading: $isLoading,
+                    //url: URL(string: "https://demo.rentality.io")!,                    isLoading: $isLoading,
+                    //url: URL(string: "https://demotest.rentality.io")!,                    isLoading: $isLoading,
                     reloadTrigger: $reloadTrigger
                 )
                 .edgesIgnoringSafeArea(.bottom)
@@ -212,7 +213,7 @@ struct RentalityWebView: UIViewRepresentable {
                 sender.endRefreshing()
             }
             
-            func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+            /*func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
                     let url = navigationAction.request.url?.absoluteString ?? ""
                 
                     if navigationAction.targetFrame == nil {
@@ -230,8 +231,44 @@ struct RentalityWebView: UIViewRepresentable {
                         }
                         decisionHandler(.cancel)
                     }
+            }*/
+        
+            func webView(
+                _ webView: WKWebView,
+                decidePolicyFor navigationAction: WKNavigationAction,
+                decisionHandler: @escaping (WKNavigationActionPolicy) -> Void
+            ) {
+                guard let url = navigationAction.request.url else {
+                    decisionHandler(.allow)
+                    return
+                }
+
+                let urlString = url.absoluteString
+                print("WKWebView navigation:", urlString)
+
+                // 1️⃣ Wallet / external app links — В ЗОВНІШНІЙ APP
+                if urlString.hasPrefix("metamask://") ||
+                   urlString.hasPrefix("wc:") ||
+                   urlString.hasPrefix("intent://") ||
+                   urlString.hasPrefix("https://metamask.app.link") ||
+                   urlString.hasPrefix("https://walletconnect.com") {
+
+                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                    decisionHandler(.cancel)
+                    return
+                }
+
+                // 2️⃣ Target frame nil (popup / new window)
+                if navigationAction.targetFrame == nil {
+                    webView.load(navigationAction.request)
+                    decisionHandler(.cancel)
+                    return
+                }
+
+                // 3️⃣ Звичайна web-навігація
+                decisionHandler(.allow)
             }
-            
+
             func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
                 if let url = navigationAction.request.url {
                     webView.load(URLRequest(url: url))
